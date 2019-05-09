@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F265C492284399100EE943B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C482284399100EE943B /* AppDelegate.swift */; };
+		1F265C4B2284399100EE943B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C4A2284399100EE943B /* ViewController.swift */; };
+		1F265C4E2284399100EE943B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C4C2284399100EE943B /* Main.storyboard */; };
+		1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */; };
+		1F265C532284399300EE943B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C522284399300EE943B /* Assets.xcassets */; };
+		1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C542284399300EE943B /* LaunchScreen.storyboard */; };
+		1F265C612284399300EE943B /* AboCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C602284399300EE943B /* AboCheckTests.swift */; };
+		1F265C6C2284399300EE943B /* AboCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C6B2284399300EE943B /* AboCheckUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F265C5D2284399300EE943B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F265C3D2284399100EE943B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F265C442284399100EE943B;
+			remoteInfo = AboCheck;
+		};
+		1F265C682284399300EE943B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F265C3D2284399100EE943B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F265C442284399100EE943B;
+			remoteInfo = AboCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F265C452284399100EE943B /* AboCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F265C482284399100EE943B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F265C4A2284399100EE943B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F265C4D2284399100EE943B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F265C502284399100EE943B /* AboCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AboCheck.xcdatamodel; sourceTree = "<group>"; };
+		1F265C522284399300EE943B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F265C552284399300EE943B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F265C572284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F265C5C2284399300EE943B /* AboCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F265C602284399300EE943B /* AboCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboCheckTests.swift; sourceTree = "<group>"; };
+		1F265C622284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F265C672284399300EE943B /* AboCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F265C6B2284399300EE943B /* AboCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboCheckUITests.swift; sourceTree = "<group>"; };
+		1F265C6D2284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F265C422284399100EE943B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C592284399300EE943B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C642284399300EE943B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F265C3C2284399100EE943B = {
+			isa = PBXGroup;
+			children = (
+				1F265C472284399100EE943B /* AboCheck */,
+				1F265C5F2284399300EE943B /* AboCheckTests */,
+				1F265C6A2284399300EE943B /* AboCheckUITests */,
+				1F265C462284399100EE943B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F265C462284399100EE943B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F265C452284399100EE943B /* AboCheck.app */,
+				1F265C5C2284399300EE943B /* AboCheckTests.xctest */,
+				1F265C672284399300EE943B /* AboCheckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F265C472284399100EE943B /* AboCheck */ = {
+			isa = PBXGroup;
+			children = (
+				1F265C482284399100EE943B /* AppDelegate.swift */,
+				1F265C4A2284399100EE943B /* ViewController.swift */,
+				1F265C4C2284399100EE943B /* Main.storyboard */,
+				1F265C522284399300EE943B /* Assets.xcassets */,
+				1F265C542284399300EE943B /* LaunchScreen.storyboard */,
+				1F265C572284399300EE943B /* Info.plist */,
+				1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */,
+			);
+			path = AboCheck;
+			sourceTree = "<group>";
+		};
+		1F265C5F2284399300EE943B /* AboCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F265C602284399300EE943B /* AboCheckTests.swift */,
+				1F265C622284399300EE943B /* Info.plist */,
+			);
+			path = AboCheckTests;
+			sourceTree = "<group>";
+		};
+		1F265C6A2284399300EE943B /* AboCheckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F265C6B2284399300EE943B /* AboCheckUITests.swift */,
+				1F265C6D2284399300EE943B /* Info.plist */,
+			);
+			path = AboCheckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F265C442284399100EE943B /* AboCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F265C702284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheck" */;
+			buildPhases = (
+				1F265C412284399100EE943B /* Sources */,
+				1F265C422284399100EE943B /* Frameworks */,
+				1F265C432284399100EE943B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AboCheck;
+			productName = AboCheck;
+			productReference = 1F265C452284399100EE943B /* AboCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F265C5B2284399300EE943B /* AboCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F265C732284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheckTests" */;
+			buildPhases = (
+				1F265C582284399300EE943B /* Sources */,
+				1F265C592284399300EE943B /* Frameworks */,
+				1F265C5A2284399300EE943B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F265C5E2284399300EE943B /* PBXTargetDependency */,
+			);
+			name = AboCheckTests;
+			productName = AboCheckTests;
+			productReference = 1F265C5C2284399300EE943B /* AboCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F265C662284399300EE943B /* AboCheckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F265C762284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheckUITests" */;
+			buildPhases = (
+				1F265C632284399300EE943B /* Sources */,
+				1F265C642284399300EE943B /* Frameworks */,
+				1F265C652284399300EE943B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F265C692284399300EE943B /* PBXTargetDependency */,
+			);
+			name = AboCheckUITests;
+			productName = AboCheckUITests;
+			productReference = 1F265C672284399300EE943B /* AboCheckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F265C3D2284399100EE943B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Cortiel_Langer_Wagner;
+				TargetAttributes = {
+					1F265C442284399100EE943B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1F265C5B2284399300EE943B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1F265C442284399100EE943B;
+					};
+					1F265C662284399300EE943B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1F265C442284399100EE943B;
+					};
+				};
+			};
+			buildConfigurationList = 1F265C402284399100EE943B /* Build configuration list for PBXProject "AboCheck" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F265C3C2284399100EE943B;
+			productRefGroup = 1F265C462284399100EE943B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F265C442284399100EE943B /* AboCheck */,
+				1F265C5B2284399300EE943B /* AboCheckTests */,
+				1F265C662284399300EE943B /* AboCheckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F265C432284399100EE943B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */,
+				1F265C532284399300EE943B /* Assets.xcassets in Resources */,
+				1F265C4E2284399100EE943B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C5A2284399300EE943B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C652284399300EE943B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F265C412284399100EE943B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F265C4B2284399100EE943B /* ViewController.swift in Sources */,
+				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
+				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C582284399300EE943B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F265C612284399300EE943B /* AboCheckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F265C632284399300EE943B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F265C6C2284399300EE943B /* AboCheckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F265C5E2284399300EE943B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F265C442284399100EE943B /* AboCheck */;
+			targetProxy = 1F265C5D2284399300EE943B /* PBXContainerItemProxy */;
+		};
+		1F265C692284399300EE943B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F265C442284399100EE943B /* AboCheck */;
+			targetProxy = 1F265C682284399300EE943B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F265C4C2284399100EE943B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F265C4D2284399100EE943B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F265C542284399300EE943B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F265C552284399300EE943B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F265C6E2284399300EE943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F265C6F2284399300EE943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F265C712284399300EE943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F265C722284399300EE943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F265C742284399300EE943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AboCheck.app/AboCheck";
+			};
+			name = Debug;
+		};
+		1F265C752284399300EE943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AboCheck.app/AboCheck";
+			};
+			name = Release;
+		};
+		1F265C772284399300EE943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AboCheck;
+			};
+			name = Debug;
+		};
+		1F265C782284399300EE943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AR3Z7JKR2H;
+				INFOPLIST_FILE = AboCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhhgb.mc.project.AboCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AboCheck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F265C402284399100EE943B /* Build configuration list for PBXProject "AboCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F265C6E2284399300EE943B /* Debug */,
+				1F265C6F2284399300EE943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F265C702284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F265C712284399300EE943B /* Debug */,
+				1F265C722284399300EE943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F265C732284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F265C742284399300EE943B /* Debug */,
+				1F265C752284399300EE943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F265C762284399300EE943B /* Build configuration list for PBXNativeTarget "AboCheckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F265C772284399300EE943B /* Debug */,
+				1F265C782284399300EE943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F265C502284399100EE943B /* AboCheck.xcdatamodel */,
+			);
+			currentVersion = 1F265C502284399100EE943B /* AboCheck.xcdatamodel */;
+			path = AboCheck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F265C3D2284399100EE943B /* Project object */;
+}
