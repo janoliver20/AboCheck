@@ -17,6 +17,7 @@
 		85652161228C3FA50047436C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652160228C3FA50047436C /* DashboardViewController.swift */; };
 		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
 		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
+		D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A0374228C410800F918C9 /* NewAboViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		85652160228C3FA50047436C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D33A0374228C410800F918C9 /* NewAboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				1F265C482284399100EE943B /* AppDelegate.swift */,
 				1F265C4C2284399100EE943B /* Main.storyboard */,
+				D33A0374228C410800F918C9 /* NewAboViewController.swift */,
 				85652164228C404C0047436C /* SettingsViewController.swift */,
 				85652162228C40270047436C /* ListViewController.swift */,
 				1F265C522284399300EE943B /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
 				85652161228C3FA50047436C /* DashboardViewController.swift in Sources */,
 				85652163228C40270047436C /* ListViewController.swift in Sources */,
