@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1F265C492284399100EE943B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C482284399100EE943B /* AppDelegate.swift */; };
-		1F265C4B2284399100EE943B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C4A2284399100EE943B /* ViewController.swift */; };
 		1F265C4E2284399100EE943B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C4C2284399100EE943B /* Main.storyboard */; };
 		1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */; };
 		1F265C532284399300EE943B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C522284399300EE943B /* Assets.xcassets */; };
 		1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C542284399300EE943B /* LaunchScreen.storyboard */; };
 		1F265C612284399300EE943B /* AboCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C602284399300EE943B /* AboCheckTests.swift */; };
 		1F265C6C2284399300EE943B /* AboCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C6B2284399300EE943B /* AboCheckUITests.swift */; };
+		85652161228C3FA50047436C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652160228C3FA50047436C /* DashboardViewController.swift */; };
+		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
+		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		1F265C452284399100EE943B /* AboCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F265C482284399100EE943B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F265C4A2284399100EE943B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F265C4D2284399100EE943B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F265C502284399100EE943B /* AboCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AboCheck.xcdatamodel; sourceTree = "<group>"; };
 		1F265C522284399300EE943B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		1F265C672284399300EE943B /* AboCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F265C6B2284399300EE943B /* AboCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboCheckUITests.swift; sourceTree = "<group>"; };
 		1F265C6D2284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85652160228C3FA50047436C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				1F265C482284399100EE943B /* AppDelegate.swift */,
-				1F265C4A2284399100EE943B /* ViewController.swift */,
 				1F265C4C2284399100EE943B /* Main.storyboard */,
+				85652164228C404C0047436C /* SettingsViewController.swift */,
+				85652162228C40270047436C /* ListViewController.swift */,
 				1F265C522284399300EE943B /* Assets.xcassets */,
 				1F265C542284399300EE943B /* LaunchScreen.storyboard */,
 				1F265C572284399300EE943B /* Info.plist */,
 				1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */,
+				85652160228C3FA50047436C /* DashboardViewController.swift */,
 			);
 			path = AboCheck;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F265C4B2284399100EE943B /* ViewController.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
+				85652161228C3FA50047436C /* DashboardViewController.swift in Sources */,
+				85652163228C40270047436C /* ListViewController.swift in Sources */,
+				85652165228C404C0047436C /* SettingsViewController.swift in Sources */,
 				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
