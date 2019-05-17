@@ -17,8 +17,9 @@
 		1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E25BF228C491B0022BE13 /* AboClass.swift */; };
 		1FE74E3C228EA899001F1D4D /* AboTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E3B228EA899001F1D4D /* AboTableController.storyboard */; };
 		1FE74E3E228EA8E6001F1D4D /* AboTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E3D228EA8E6001F1D4D /* AboTableController.swift */; };
+		1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E40228EB417001F1D4D /* DashboardViewController.swift */; };
+		1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */; };
 		262394E4DC35DCD49DBE62EF /* Pods_AboCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2EB47A348A6B38891A6004 /* Pods_AboCheck.framework */; };
-		85652161228C3FA50047436C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652160228C3FA50047436C /* DashboardViewController.swift */; };
 		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
 		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
 		D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A0374228C410800F918C9 /* NewAboViewController.swift */; };
@@ -58,7 +59,8 @@
 		1F7E25BF228C491B0022BE13 /* AboClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboClass.swift; sourceTree = "<group>"; };
 		1FE74E3B228EA899001F1D4D /* AboTableController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboTableController.storyboard; sourceTree = "<group>"; };
 		1FE74E3D228EA8E6001F1D4D /* AboTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboTableController.swift; sourceTree = "<group>"; };
-		85652160228C3FA50047436C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1FE74E40228EB417001F1D4D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		888678CB8DD6B5E23C9804EE /* Pods-AboCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboCheck.debug.xcconfig"; path = "Target Support Files/Pods-AboCheck/Pods-AboCheck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		1F265C472284399100EE943B /* AboCheck */ = {
 			isa = PBXGroup;
 			children = (
+				1FE74E3F228EB3F2001F1D4D /* DashboardViewController */,
 				1FE74E3A228EA888001F1D4D /* AboTableController */,
 				1F265C482284399100EE943B /* AppDelegate.swift */,
 				1F265C4C2284399100EE943B /* Main.storyboard */,
@@ -125,7 +128,6 @@
 				1FE74E35228EA41F001F1D4D /* New Abo */,
 				1FE74E38228EA441001F1D4D /* Settings */,
 				1FE74E37228EA43A001F1D4D /* List */,
-				1FE74E36228EA431001F1D4D /* Dashboard */,
 				1F265C522284399300EE943B /* Assets.xcassets */,
 				1F265C542284399300EE943B /* LaunchScreen.storyboard */,
 				1F265C572284399300EE943B /* Info.plist */,
@@ -157,14 +159,6 @@
 				D33A0374228C410800F918C9 /* NewAboViewController.swift */,
 			);
 			path = "New Abo";
-			sourceTree = "<group>";
-		};
-		1FE74E36228EA431001F1D4D /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				85652160228C3FA50047436C /* DashboardViewController.swift */,
-			);
-			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		1FE74E37228EA43A001F1D4D /* List */ = {
@@ -201,6 +195,15 @@
 			path = AboTableController;
 			sourceTree = "<group>";
 		};
+		1FE74E3F228EB3F2001F1D4D /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FE74E40228EB417001F1D4D /* DashboardViewController.swift */,
+				1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */,
+			);
+			path = DashboardViewController;
+			sourceTree = "<group>";
+		};
 		A2A8D7CE17173D7AFBCD0DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +218,6 @@
 				888678CB8DD6B5E23C9804EE /* Pods-AboCheck.debug.xcconfig */,
 				CF9D56BFBFC34018F1D7BD11 /* Pods-AboCheck.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */,
 				1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */,
 				1F265C532284399300EE943B /* Assets.xcassets in Resources */,
 				1FE74E3C228EA899001F1D4D /* AboTableController.storyboard in Resources */,
@@ -401,10 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */,
+				1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */,
 				1FE74E3E228EA8E6001F1D4D /* AboTableController.swift in Sources */,
 				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
-				85652161228C3FA50047436C /* DashboardViewController.swift in Sources */,
 				85652163228C40270047436C /* ListViewController.swift in Sources */,
 				85652165228C404C0047436C /* SettingsViewController.swift in Sources */,
 				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,

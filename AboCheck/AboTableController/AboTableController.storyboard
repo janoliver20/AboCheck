@@ -40,11 +40,11 @@
             </objects>
             <point key="canvasLocation" x="686.95652173913049" y="-291.29464285714283"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="aRs-GU-Ugg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G6T-6J-IaA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="y9E-vQ-IcU"/>
+                    <tabBarItem key="tabBarItem" title="List" id="y9E-vQ-IcU"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
