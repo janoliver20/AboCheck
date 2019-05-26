@@ -10,40 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Abo View Controller-->
-        <scene sceneID="Bsu-xE-UPb">
-            <objects>
-                <viewController id="WnR-Ut-XR8" customClass="NewAboViewController" customModule="AboCheck" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3PU-YD-ofa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cW-CF-AgU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Neues Abo hinzufügen" id="1pN-5f-sjU">
-                                        <barButtonItem key="rightBarButtonItem" title="Fertig" style="plain" id="wGj-XQ-qYX">
-                                            <connections>
-                                                <action selector="addAbo:" destination="WnR-Ut-XR8" id="kQi-pT-De3"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="4cW-CF-AgU" firstAttribute="top" secondItem="Xci-zb-Cxr" secondAttribute="top" id="9kQ-qa-bOj"/>
-                            <constraint firstItem="4cW-CF-AgU" firstAttribute="leading" secondItem="Xci-zb-Cxr" secondAttribute="leading" id="ahx-yx-0FO"/>
-                            <constraint firstItem="4cW-CF-AgU" firstAttribute="trailing" secondItem="Xci-zb-Cxr" secondAttribute="trailing" id="iTe-Sb-kZz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xci-zb-Cxr"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BGt-PU-c6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3815.9420289855075" y="137.94642857142856"/>
-        </scene>
         <!--Einstellungen-->
         <scene sceneID="alx-8A-vhd">
             <objects>
@@ -89,11 +55,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8wF-zd-RpS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="AboCheck" id="ftC-cG-vHb">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8SM-F6-eQg">
-                            <connections>
-                                <segue destination="WnR-Ut-XR8" kind="presentation" id="qgo-LC-6Gw"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8SM-F6-eQg"/>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XDy-Df-c6Z">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -110,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="597" y="-52"/>
         </scene>
-        <!--AboTableController-->
+        <!--ListViewController-->
         <scene sceneID="hbh-0T-lJ0">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AboTableController" storyboardName="AboTableController" id="ZMY-Zg-MHf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="AboTableController" storyboardName="ListViewController" id="ZMY-Zg-MHf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kMc-Je-PQ8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MK5-dZ-V9g" userLabel="First Responder" sceneMemberID="firstResponder"/>

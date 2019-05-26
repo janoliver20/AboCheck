@@ -67,7 +67,11 @@
                         <viewLayoutGuide key="safeArea" id="IwD-80-cUt"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wbc-Z4-Qfx">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="oyO-Py-0tE"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="oyO-Py-0tE">
+                            <connections>
+                                <segue destination="e9r-Q3-cby" kind="presentation" id="Bj5-FB-NHC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -79,6 +83,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5f-7R-3J4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="91.741071428571431"/>
+        </scene>
+        <!--NewAboViewController-->
+        <scene sceneID="Vpr-OB-HCK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewAboViewController" id="e9r-Q3-cby" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZT7-of-pfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="-217"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="rjW-4b-4WC">
