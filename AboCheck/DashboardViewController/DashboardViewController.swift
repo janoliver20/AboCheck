@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SwiftMessages
 
 class DashboardViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
