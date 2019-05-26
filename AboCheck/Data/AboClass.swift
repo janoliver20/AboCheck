@@ -14,13 +14,26 @@ class AboClass {
     static let allAbos = AboClass()
     
 // Array for all data, which get initialized directly at startup
-    var abos: [Abo] = [Abo]()
+    private var abos: [Abo] = [Abo]()
     
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-
-   
     
     private init(){}
+    
+    func getArrays() -> [Abo] {
+        return abos
+    }
+    
+    func get(at index: Int) -> Abo? {
+        if index < abos.count && index >= 0 {
+            return abos[index]
+        }
+        return nil
+    }
+    
+    func count() -> Int {
+        return abos.count
+    }
     
     func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, costsMonthly: Double = 0.0, catagory: String = "" ) {
 //
@@ -56,6 +69,29 @@ class AboClass {
         } catch let error as NSError {
             print("Error: \(error)")
         }
+    }
+    
+    func updateObject(object: Abo) {
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        do{
+            try managedContext.save()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
+    func deleteObject(object: Abo){
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        do{
+            managedContext.delete(object)
+            try managedContext.save()
+        } catch let error as NSError {
+            print (error.localizedDescription)
+        }
+        
     }
     
     
