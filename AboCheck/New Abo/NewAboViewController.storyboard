@@ -17,11 +17,56 @@
                     <view key="view" contentMode="scaleToFill" id="bgQ-jD-evh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tTd-dX-e7c">
+                                <rect key="frame" x="35" y="176" width="344" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="p5m-ec-oSP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="pro Monat"/>
+                                    <segment title="pro Jahr"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kosten pro Monat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvv-Nh-oox">
+                                <rect key="frame" x="35" y="240" width="344" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="n9c-Fw-QSb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YmE-a6-Fkm">
+                                <rect key="frame" x="30" y="112" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5jK-hv-2mC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jvv-Nh-oox" firstAttribute="top" secondItem="tTd-dX-e7c" secondAttribute="bottom" constant="24" id="18z-Lu-Iz1"/>
+                            <constraint firstItem="tTd-dX-e7c" firstAttribute="top" secondItem="YmE-a6-Fkm" secondAttribute="bottom" constant="24" id="GL0-sH-pkR"/>
+                            <constraint firstItem="Jvv-Nh-oox" firstAttribute="leading" secondItem="woo-0T-mU1" secondAttribute="leading" constant="35" id="Jf4-EJ-U6r"/>
+                            <constraint firstItem="woo-0T-mU1" firstAttribute="trailing" secondItem="Jvv-Nh-oox" secondAttribute="trailing" constant="35" id="Xlc-wU-fix"/>
+                            <constraint firstItem="woo-0T-mU1" firstAttribute="trailing" secondItem="tTd-dX-e7c" secondAttribute="trailing" constant="35" id="fyE-Xm-sFw"/>
+                            <constraint firstItem="YmE-a6-Fkm" firstAttribute="top" secondItem="woo-0T-mU1" secondAttribute="top" constant="24" id="hQD-gn-6NT"/>
+                            <constraint firstItem="YmE-a6-Fkm" firstAttribute="leading" secondItem="woo-0T-mU1" secondAttribute="leading" constant="30" id="qNb-hA-L0V"/>
+                            <constraint firstItem="woo-0T-mU1" firstAttribute="trailing" secondItem="YmE-a6-Fkm" secondAttribute="trailing" constant="30" id="vX4-AW-zPh"/>
+                            <constraint firstItem="tTd-dX-e7c" firstAttribute="leading" secondItem="woo-0T-mU1" secondAttribute="leading" constant="35" id="y4s-ah-Htf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="woo-0T-mU1"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Abo" id="VOm-MU-G1H">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="Fgf-VC-2Y2"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="Fgf-VC-2Y2">
+                            <connections>
+                                <action selector="addAbo:" destination="9dc-7B-K3Z" id="bqG-bw-SSk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFB-SO-90a" userLabel="First Responder" sceneMemberID="firstResponder"/>
