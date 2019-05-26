@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-
-
 class DashboardViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dateSC: UISegmentedControl!
