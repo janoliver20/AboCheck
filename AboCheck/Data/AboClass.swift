@@ -16,12 +16,13 @@ class AboClass {
 // Array for all data, which get initialized directly at startup
     var abos: [Abo] = [Abo]()
     
+    var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+   
+    
     private init(){}
     
     func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, costsMonthly: Double = 0.0, catagory: String = "" ) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
 //
         let managedContext = appDelegate.persistentContainer.viewContext
 //
@@ -46,9 +47,6 @@ class AboClass {
     }
     
     func loadAbo() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Abo")

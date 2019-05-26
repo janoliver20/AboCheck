@@ -8,12 +8,19 @@
 
 import Foundation
 import UIKit
+import SwiftMessages
 
 class DashboardViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var dateSC: UISegmentedControl!
+    @IBOutlet weak var dateLbl: UILabel!
+    
+    let cellID = "expirationCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(DashBoardTableViewCell.self, forCellReuseIdentifier: cellID)
         
         self.tableView.tableFooterView = UIView()
     }

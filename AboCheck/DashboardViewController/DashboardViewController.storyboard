@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="200" id="de4-0t-nKd"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="expirationCell" id="EdD-Bz-tHA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="expirationCell" id="EdD-Bz-tHA" customClass="DashBoardTableViewCell" customModule="AboCheck" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EdD-Bz-tHA" id="Sqx-TT-s0t">
@@ -35,8 +35,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-qg-6Eu">
-                                <rect key="frame" x="174" y="148" width="66.5" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-qg-6Eu">
+                                <rect key="frame" x="178.5" y="148" width="57" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="zCR-Th-QcF"/>
                                 </constraints>
@@ -66,9 +66,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IwD-80-cUt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wbc-Z4-Qfx"/>
+                    <navigationItem key="navigationItem" id="Wbc-Z4-Qfx">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="oyO-Py-0tE"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dateLbl" destination="RLZ-qg-6Eu" id="ayQ-Ze-8bc"/>
+                        <outlet property="dateSC" destination="dsA-g5-ksu" id="R2H-EI-TA9"/>
                         <outlet property="tableView" destination="AAg-1e-neP" id="U2j-gf-s2f"/>
                     </connections>
                 </viewController>
