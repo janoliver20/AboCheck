@@ -9,6 +9,7 @@
 import UIKit
 
 class ListViewController: UIViewController {
+    @IBOutlet weak var ListViewController: UITableView!
     
     let allAbos = AboClass.allAbos
 
@@ -19,10 +20,29 @@ class ListViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         allAbos.loadAbo()
+        ListViewController.delegate = self
+        ListViewController.dataSource = self
+        
+    }
+    
+   
+
+}
+
+extension ListViewController:  UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
     
     
-
-    
-
 }
