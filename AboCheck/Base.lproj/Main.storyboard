@@ -6,49 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Einstellungen-->
-        <scene sceneID="alx-8A-vhd">
-            <objects>
-                <viewController id="YOC-2j-t1n" customClass="SettingsViewController" customModule="AboCheck" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BXm-qO-pVu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-qZ-wOl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingCell" id="Uve-v1-sYP">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uve-v1-sYP" id="Fr0-iM-9u0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="K0m-qZ-wOl" firstAttribute="leading" secondItem="0dH-lQ-AVC" secondAttribute="leading" id="638-pf-J3K"/>
-                            <constraint firstItem="K0m-qZ-wOl" firstAttribute="bottom" secondItem="0dH-lQ-AVC" secondAttribute="bottom" id="ZBh-3j-9z3"/>
-                            <constraint firstItem="K0m-qZ-wOl" firstAttribute="top" secondItem="0dH-lQ-AVC" secondAttribute="top" id="bcB-ja-r5y"/>
-                            <constraint firstItem="K0m-qZ-wOl" firstAttribute="trailing" secondItem="0dH-lQ-AVC" secondAttribute="trailing" id="uze-3A-3x0"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0dH-lQ-AVC"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Einstellungen" id="IsL-ww-dMR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2n-3R-Ykt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1918.840579710145" y="900.66964285714278"/>
-        </scene>
         <!--AboCheck-->
         <scene sceneID="aPO-We-4Vi">
             <objects>
@@ -64,8 +24,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="ZMY-Zg-MHf" kind="relationship" relationship="viewControllers" id="uKd-ec-GvV"/>
-                        <segue destination="YOC-2j-t1n" kind="relationship" relationship="viewControllers" id="fxt-G7-ijl"/>
                         <segue destination="Jk0-gw-ub7" kind="relationship" relationship="viewControllers" id="IuV-wj-lVi"/>
+                        <segue destination="QAw-fU-nfg" kind="relationship" relationship="viewControllers" id="rXW-cx-EOA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLL-sN-etH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,6 +51,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0Y-IH-I7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528" y="-515"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="doM-gY-YR0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsViewController" id="QAw-fU-nfg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yYN-q1-hxz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8U-O4-Bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="465"/>
         </scene>
     </scenes>
 </document>
