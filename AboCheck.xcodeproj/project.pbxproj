@@ -24,6 +24,9 @@
 		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
 		D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A0374228C410800F918C9 /* NewAboViewController.swift */; };
 		D3B25F0D229B172C002B4A8A /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B25F0C229B172C002B4A8A /* SettingsViewController.storyboard */; };
+		D3B25F0F229B2B55002B4A8A /* NewAboCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */; };
+		D3B25F11229B317E002B4A8A /* ExtendedOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */; };
+		D3B25F13229B4468002B4A8A /* MemberSinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B25F12229B4468002B4A8A /* MemberSinceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D33A0374228C410800F918C9 /* NewAboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
 		D3B25F0C229B172C002B4A8A /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboCategoryCell.swift; sourceTree = "<group>"; };
+		D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedOptionsController.swift; sourceTree = "<group>"; };
+		D3B25F12229B4468002B4A8A /* MemberSinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSinceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,9 @@
 			children = (
 				D33A0374228C410800F918C9 /* NewAboViewController.swift */,
 				852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */,
+				D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */,
+				D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */,
+				D3B25F12229B4468002B4A8A /* MemberSinceCell.swift */,
 			);
 			path = "New Abo";
 			sourceTree = "<group>";
@@ -371,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B25F13229B4468002B4A8A /* MemberSinceCell.swift in Sources */,
 				1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */,
+				D3B25F0F229B2B55002B4A8A /* NewAboCategoryCell.swift in Sources */,
 				1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */,
 				1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */,
 				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
@@ -379,6 +390,7 @@
 				85652163228C40270047436C /* ListViewController.swift in Sources */,
 				85652165228C404C0047436C /* SettingsViewController.swift in Sources */,
 				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,
+				D3B25F11229B317E002B4A8A /* ExtendedOptionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

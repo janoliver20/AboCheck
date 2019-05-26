@@ -13,7 +13,7 @@ class NewAboViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+      
     }
     
 
@@ -23,3 +23,8 @@ class NewAboViewController: UIViewController {
     }
     
 }
+
+
+    
+    
+
