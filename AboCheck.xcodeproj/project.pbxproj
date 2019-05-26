@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */; };
 		1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E40228EB417001F1D4D /* DashboardViewController.swift */; };
 		1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */; };
-		262394E4DC35DCD49DBE62EF /* Pods_AboCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2EB47A348A6B38891A6004 /* Pods_AboCheck.framework */; };
 		852C7C66229B0A5F0059ABFE /* NewAboViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */; };
 		852C7C68229B0E9A0059ABFE /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */; };
 		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
@@ -65,10 +64,7 @@
 		852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		888678CB8DD6B5E23C9804EE /* Pods-AboCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboCheck.debug.xcconfig"; path = "Target Support Files/Pods-AboCheck/Pods-AboCheck.debug.xcconfig"; sourceTree = "<group>"; };
-		CF9D56BFBFC34018F1D7BD11 /* Pods-AboCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AboCheck.release.xcconfig"; path = "Target Support Files/Pods-AboCheck/Pods-AboCheck.release.xcconfig"; sourceTree = "<group>"; };
 		D33A0374228C410800F918C9 /* NewAboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
-		FA2EB47A348A6B38891A6004 /* Pods_AboCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AboCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262394E4DC35DCD49DBE62EF /* Pods_AboCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +99,6 @@
 				1F265C5F2284399300EE943B /* AboCheckTests */,
 				1F265C6A2284399300EE943B /* AboCheckUITests */,
 				1F265C462284399100EE943B /* Products */,
-				C033082B0B9193AD83F48604 /* Pods */,
-				A2A8D7CE17173D7AFBCD0DEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,23 +190,6 @@
 				1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */,
 			);
 			path = DashboardViewController;
-			sourceTree = "<group>";
-		};
-		A2A8D7CE17173D7AFBCD0DEC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA2EB47A348A6B38891A6004 /* Pods_AboCheck.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C033082B0B9193AD83F48604 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				888678CB8DD6B5E23C9804EE /* Pods-AboCheck.debug.xcconfig */,
-				CF9D56BFBFC34018F1D7BD11 /* Pods-AboCheck.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,15 +330,14 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AboCheck/Pods-AboCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AboCheck/Pods-AboCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AboCheck/Pods-AboCheck-frameworks.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		DFDBC69DE2084A4E698677FD /* [CP] Check Pods Manifest.lock */ = {
@@ -373,18 +348,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AboCheck-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -574,7 +547,6 @@
 		};
 		1F265C712284399300EE943B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 888678CB8DD6B5E23C9804EE /* Pods-AboCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,7 +565,6 @@
 		};
 		1F265C722284399300EE943B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF9D56BFBFC34018F1D7BD11 /* Pods-AboCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
