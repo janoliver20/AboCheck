@@ -9,6 +9,12 @@
 import UIKit
 import CoreData
 
+extension UIApplication {
+    static var appDelegate: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
