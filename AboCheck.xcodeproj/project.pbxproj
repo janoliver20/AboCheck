@@ -14,6 +14,8 @@
 		1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F265C542284399300EE943B /* LaunchScreen.storyboard */; };
 		1F265C612284399300EE943B /* AboCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C602284399300EE943B /* AboCheckTests.swift */; };
 		1F265C6C2284399300EE943B /* AboCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C6B2284399300EE943B /* AboCheckUITests.swift */; };
+		1F307F8F229B280E000713FE /* aboPropertys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F307F8E229B280E000713FE /* aboPropertys.swift */; };
+		1F307F9522A12B92000713FE /* AboExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F307F9422A12B92000713FE /* AboExtension.swift */; };
 		1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E25BF228C491B0022BE13 /* AboClass.swift */; };
 		1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */; };
 		1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E40228EB417001F1D4D /* DashboardViewController.swift */; };
@@ -58,6 +60,8 @@
 		1F265C672284399300EE943B /* AboCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F265C6B2284399300EE943B /* AboCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboCheckUITests.swift; sourceTree = "<group>"; };
 		1F265C6D2284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F307F8E229B280E000713FE /* aboPropertys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboPropertys.swift; sourceTree = "<group>"; };
+		1F307F9422A12B92000713FE /* AboExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboExtension.swift; sourceTree = "<group>"; };
 		1F7E25BF228C491B0022BE13 /* AboClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboClass.swift; sourceTree = "<group>"; };
 		1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		1FE74E40228EB417001F1D4D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -182,8 +186,10 @@
 		1FE74E39228EA44A001F1D4D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1F7E25BF228C491B0022BE13 /* AboClass.swift */,
 				1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */,
+				1F7E25BF228C491B0022BE13 /* AboClass.swift */,
+				1F307F8E229B280E000713FE /* aboPropertys.swift */,
+				1F307F9422A12B92000713FE /* AboExtension.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -379,6 +385,8 @@
 				1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */,
 				1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */,
 				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
+				1F307F9522A12B92000713FE /* AboExtension.swift in Sources */,
+				1F307F8F229B280E000713FE /* aboPropertys.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
 				852C7C6A229B25640059ABFE /* ListTableViewCell.swift in Sources */,
 				85652163228C40270047436C /* ListViewController.swift in Sources */,

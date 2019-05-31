@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+
+
 class AboClass {
 // A static variable to access the data from everywhere in this project.
     static let allAbos = AboClass()
@@ -35,7 +37,11 @@ class AboClass {
         return abos.count
     }
     
-    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, costsMonthly: Double = 0.0, catagory: String = "" ) {
+    func sortAbo(by sortClosure: (Abo, Abo) -> Bool){
+        abos.sort(by: sortClosure)
+    }
+    
+    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int, costsMonthly: Double = 0.0, catagory: String = "" ) {
 //
         let managedContext = appDelegate.persistentContainer.viewContext
 //
@@ -48,8 +54,13 @@ class AboClass {
         abo.setValue(website, forKey: "website")
         abo.setValue(creationDate, forKey: "creationDate")
         abo.setValue(costsMonthly, forKey: "costsMonthly")
-        abo.setValue(endDate, forKey: "endDate")
+        if endDate != nil {
+            abo.setValue(endDate, forKey: "endDate")
+        }
         abo.setValue(catagory, forKey: "catagory")
+        
+        let date = Calendar.current.date(bySetting: .day, value: duration, of: creationDate)
+        abo.setValue(date, forKey: "duration")
         
         do {
             try managedContext.save()
