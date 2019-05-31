@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard View Controller-->
+        <!--Dashboard-->
         <scene sceneID="9PO-cP-Lug">
             <objects>
                 <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SQy-Cf-vKR" customClass="DashboardViewController" customModule="AboCheck" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IwD-80-cUt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wbc-Z4-Qfx">
+                    <navigationItem key="navigationItem" title="Dashboard" id="Wbc-Z4-Qfx">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="oyO-Py-0tE">
                             <connections>
                                 <segue destination="e9r-Q3-cby" kind="presentation" id="Bj5-FB-NHC"/>
