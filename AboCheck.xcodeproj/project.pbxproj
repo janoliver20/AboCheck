@@ -192,8 +192,8 @@
 		1FE74E39228EA44A001F1D4D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1F7E25BF228C491B0022BE13 /* AboClass.swift */,
 				1F265C4F2284399100EE943B /* AboCheck.xcdatamodeld */,
+				1F7E25BF228C491B0022BE13 /* AboClass.swift */,
 				1F307F8E229B280E000713FE /* aboPropertys.swift */,
 				1F307F9422A12B92000713FE /* AboExtension.swift */,
 			);

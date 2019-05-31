@@ -41,7 +41,7 @@ class AboClass {
         abos.sort(by: sortClosure)
     }
     
-    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int16, costsMonthly: Double = 0.0, catagory: String = "" ) {
+    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int, costsMonthly: Double = 0.0, catagory: String = "" ) {
 //
         let managedContext = appDelegate.persistentContainer.viewContext
 //
@@ -57,8 +57,10 @@ class AboClass {
         if endDate != nil {
             abo.setValue(endDate, forKey: "endDate")
         }
-        
         abo.setValue(catagory, forKey: "catagory")
+        
+        let date = Calendar.current.date(bySetting: .day, value: duration, of: creationDate)
+        abo.setValue(date, forKey: "duration")
         
         do {
             try managedContext.save()
