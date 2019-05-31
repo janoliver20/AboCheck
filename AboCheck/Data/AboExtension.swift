@@ -10,11 +10,11 @@ import UIKit
 import CoreData
 
 extension Abo {
-    func getDurationTillNextPayDate() -> Int? {
+    func getDurationTillNextPayDate(from: Date = Date()) -> Int? {
         
         let calendar = Calendar.current
         
-        let date1 = calendar.startOfDay(for: Date())
+        let date1 = calendar.startOfDay(for: from )
         
         var date2: Date?
         
