@@ -23,8 +23,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZMY-Zg-MHf" kind="relationship" relationship="viewControllers" id="uKd-ec-GvV"/>
                         <segue destination="Jk0-gw-ub7" kind="relationship" relationship="viewControllers" id="IuV-wj-lVi"/>
+                        <segue destination="ZMY-Zg-MHf" kind="relationship" relationship="viewControllers" id="uKd-ec-GvV"/>
                         <segue destination="QAw-fU-nfg" kind="relationship" relationship="viewControllers" id="rXW-cx-EOA"/>
                     </connections>
                 </tabBarController>

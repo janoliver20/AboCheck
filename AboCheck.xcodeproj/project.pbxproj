@@ -20,6 +20,7 @@
 		1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */; };
 		852C7C66229B0A5F0059ABFE /* NewAboViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */; };
 		852C7C68229B0E9A0059ABFE /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */; };
+		852C7C6A229B25640059ABFE /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C7C69229B25640059ABFE /* ListTableViewCell.swift */; };
 		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
 		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
 		D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A0374228C410800F918C9 /* NewAboViewController.swift */; };
@@ -63,6 +64,7 @@
 		1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewAboViewController.storyboard; sourceTree = "<group>"; };
 		852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		852C7C69229B25640059ABFE /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D33A0374228C410800F918C9 /* NewAboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				85652162228C40270047436C /* ListViewController.swift */,
 				852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */,
+				852C7C69229B25640059ABFE /* ListTableViewCell.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */,
 				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
+				852C7C6A229B25640059ABFE /* ListTableViewCell.swift in Sources */,
 				85652163228C40270047436C /* ListViewController.swift in Sources */,
 				85652165228C404C0047436C /* SettingsViewController.swift in Sources */,
 				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,
