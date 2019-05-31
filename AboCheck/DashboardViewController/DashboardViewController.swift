@@ -33,7 +33,8 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "expirationCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "expirationCell", for: indexPath) as! DashBoardTableViewCell
+        
         
         return cell
     }

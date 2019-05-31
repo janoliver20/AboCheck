@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+
+
 class AboClass {
 // A static variable to access the data from everywhere in this project.
     static let allAbos = AboClass()
@@ -34,6 +36,11 @@ class AboClass {
     func count() -> Int {
         return abos.count
     }
+    
+    func sortAbo(by sortClosure: (Abo, Abo) -> Bool){
+        abos.sort(by: sortClosure)
+    }
+    
     
     func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, costsMonthly: Double = 0.0, catagory: String = "" ) {
 //
