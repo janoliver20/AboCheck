@@ -10,6 +10,11 @@ import UIKit
 
 class DashBoardTableViewCell: UITableViewCell {
     
+    var abo: Abo? {
+        didSet {
+            
+        }
+    }
     
     
 }
