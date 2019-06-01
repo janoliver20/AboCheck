@@ -47,22 +47,21 @@ class AboClass {
 
     func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int, costsMonthly: Double = 0.0, catagory: String = "") {
 //
-        let entity = NSEntityDescription.entity(forEntityName: "Abo", in: context)!
-//
-        let abo = NSManagedObject(entity: entity, insertInto: context)
+        let abo = Abo(context: context)
         //  set Values to the keys.
-        abo.setValue(title, forKey: "title")
-        abo.setValue(note, forKey: "note")
-        abo.setValue(website, forKey: "website")
-        abo.setValue(creationDate, forKey: "creationDate")
-        abo.setValue(costsMonthly, forKey: "costsMonthly")
+        abo.title = title
+        abo.note = note
+        abo.website = website
+        abo.creationDate = creationDate
+        abo.costsMonthly = costsMonthly
         if endDate != nil {
-            abo.setValue(endDate, forKey: "endDate")
+            abo.endDate = endDate
         }
-        abo.setValue(catagory, forKey: "catagory")
+        abo.category = catagory
 
-        let date = Calendar.current.date(bySetting: .day, value: duration, of: creationDate)
-        abo.setValue(date, forKey: "duration")
+        let durationDate = Calendar.current.date(bySetting: .day, value: duration, of: creationDate)
+        abo.duration = durationDate
+        abo.durationInDays = Int16(duration)
 
         do {
             try context.save()
