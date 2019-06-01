@@ -55,10 +55,6 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="memberSince:" destination="uhN-d7-vjK" eventType="editingDidEnd" id="P5C-6S-Jib"/>
-                                                        <action selector="memberSince:" destination="nUY-BI-rTv" eventType="editingDidEnd" id="gKx-LC-VnF"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -85,9 +81,11 @@
                             <outlet property="delegate" destination="70M-RR-WIk" id="Sgr-fI-6N2"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="memberSince" destination="SDB-eU-8aq" id="kvc-g2-R1R"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mig-63-tVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="nUY-BI-rTv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5498.5507246376819" y="46.875"/>
         </scene>
