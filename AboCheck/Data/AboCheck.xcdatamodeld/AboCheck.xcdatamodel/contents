@@ -11,7 +11,12 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="URI" syncable="YES"/>
     </entity>
+    <entity name="MonthlyCost" representedClassName="MonthlyCost" syncable="YES" codeGenerationType="class">
+        <attribute name="cost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Abo" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="MonthlyCost" positionX="309.7578125" positionY="86.4765625" width="128" height="73"/>
     </elements>
 </model>
