@@ -80,6 +80,26 @@ class AboClass {
         } catch let error as NSError {
             print("Error: \(error)")
         }
+        
+        abos.forEach { (abo) in
+            guard let duration = abo.duration else {
+                return
+            }
+            
+            if Date() > duration {
+                guard let daysUntil = abo.getDurationTillNextPayDate() else {
+                    return
+                }
+                
+                abo.duration = Calendar.current.date(bySetting: .day, value: daysUntil % Int(abo.durationInDays), of: Date())
+            }
+        }
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
     
     func updateObject(object: Abo) {

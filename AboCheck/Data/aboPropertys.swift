@@ -16,4 +16,6 @@ struct aboProperties {
     static let endDate = "endDate"
     static let costMonthly = "costMonthly"
     static let category = "category"
+    static let duration = "duration"
+    static let durationInDays = "durationInDays"
 }
