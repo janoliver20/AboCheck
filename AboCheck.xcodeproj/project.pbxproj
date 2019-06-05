@@ -18,6 +18,7 @@
 		1F307F9522A12B92000713FE /* AboExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F307F9422A12B92000713FE /* AboExtension.swift */; };
 		1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E25BF228C491B0022BE13 /* AboClass.swift */; };
 		1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */; };
+		1FB7AB1C22A17E0800724784 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7AB1B22A17E0800724784 /* UIViewExtension.swift */; };
 		1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E40228EB417001F1D4D /* DashboardViewController.swift */; };
 		1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */; };
 		852C7C66229B0A5F0059ABFE /* NewAboViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */; };
@@ -64,6 +65,7 @@
 		1F307F9422A12B92000713FE /* AboExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboExtension.swift; sourceTree = "<group>"; };
 		1F7E25BF228C491B0022BE13 /* AboClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboClass.swift; sourceTree = "<group>"; };
 		1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		1FB7AB1B22A17E0800724784 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1FE74E40228EB417001F1D4D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewAboViewController.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				1F265C4C2284399100EE943B /* Main.storyboard */,
 				1F265C482284399100EE943B /* AppDelegate.swift */,
+				1FB7AB1B22A17E0800724784 /* UIViewExtension.swift */,
 				1FE74E3F228EB3F2001F1D4D /* DashboardViewController */,
 				1FE74E39228EA44A001F1D4D /* Data */,
 				1FE74E35228EA41F001F1D4D /* New Abo */,
@@ -383,6 +386,7 @@
 			files = (
 				1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */,
 				1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */,
+				1FB7AB1C22A17E0800724784 /* UIViewExtension.swift in Sources */,
 				1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */,
 				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
 				1F307F9522A12B92000713FE /* AboExtension.swift in Sources */,

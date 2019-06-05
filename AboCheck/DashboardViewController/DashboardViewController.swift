@@ -12,6 +12,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dateSC: UISegmentedControl!
     @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var costLbl: UILabel!
     
     let cellID = "expirationCell"
     
@@ -21,9 +22,21 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.layer.borderColor = UIColor.black.cgColor
         tableView.register(DashBoardTableViewCell.self, forCellReuseIdentifier: cellID)
         
         self.tableView.tableFooterView = UIView()
+        fillNextUpTableView()
+        fillCostLbl()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        fillNextUpTableView()
+        tableView.reloadData()
+    }
+    
+    func fillNextUpTableView() {
         allAbos.sortAbo { (abo1, abo2) -> Bool in
             guard let daysUntil1 = abo1.getDurationTillNextPayDate() else {
                 return false
@@ -32,15 +45,49 @@ class DashboardViewController: UIViewController {
             guard let daysUntil2 = abo2.getDurationTillNextPayDate() else {
                 return false
             }
-    
+            
             return daysUntil1 < daysUntil2
         }
     }
+    
+    func fillCostLbl(){
+        var sumCosts: Double = 0.0
+        
+        for i in 0...allAbos.count() {
+            if let costs = allAbos.get(at: i)?.costsMonthly {
+                sumCosts += costs
+            }
+            
+        }
+        printCostLbl(costs: sumCosts)
+    }
+    
+    func printCostLbl(costs: Double){
+        var finalCosts = costs
+        switch dateSC.selectedSegmentIndex {
+        case 1:
+            finalCosts = costs * 12
+        default:
+            finalCosts = costs
+        }
+        
+        costLbl.text = "\(String(format: "%.2f", finalCosts))€"
+        
+    }
+    
+    @IBAction func changeLbl(_ sender: UISegmentedControl) {
+        fillCostLbl()
+    }
+    
     
 }
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if allAbos.count() <= 10 {
+            return allAbos.count()
+        }
+        
         return 10
     }
     
@@ -48,8 +95,6 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "expirationCell", for: indexPath) as! DashBoardTableViewCell
         
         cell.abo = allAbos.get(at: indexPath.row)
-        
-        
         
         return cell
     }

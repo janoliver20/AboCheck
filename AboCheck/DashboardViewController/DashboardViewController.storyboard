@@ -50,18 +50,41 @@
                                     <segment title="Monthly"/>
                                     <segment title="Yearly"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeLbl:" destination="SQy-Cf-vKR" eventType="valueChanged" id="5UY-wY-Fwa"/>
+                                </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next abos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4A-Ix-xad">
+                                <rect key="frame" x="20" y="579.5" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwb-OB-28w">
+                                <rect key="frame" x="171.5" y="399" width="71" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="sZl-AI-BcA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RLZ-qg-6Eu" firstAttribute="top" secondItem="IwD-80-cUt" secondAttribute="top" constant="60" id="2Om-hG-Tw9"/>
                             <constraint firstItem="RLZ-qg-6Eu" firstAttribute="centerX" secondItem="nae-RQ-XOl" secondAttribute="centerX" id="2rC-hk-OPB"/>
+                            <constraint firstItem="Qwb-OB-28w" firstAttribute="centerX" secondItem="nae-RQ-XOl" secondAttribute="centerX" id="61a-kc-Y7R"/>
                             <constraint firstItem="IwD-80-cUt" firstAttribute="trailing" secondItem="dsA-g5-ksu" secondAttribute="trailing" constant="100" id="D3m-31-tbv"/>
                             <constraint firstItem="AAg-1e-neP" firstAttribute="bottom" secondItem="IwD-80-cUt" secondAttribute="bottom" id="Ebg-Of-WOJ"/>
                             <constraint firstItem="dsA-g5-ksu" firstAttribute="top" secondItem="RLZ-qg-6Eu" secondAttribute="bottom" constant="8" id="IrU-2B-vu2"/>
+                            <constraint firstItem="AAg-1e-neP" firstAttribute="top" secondItem="N4A-Ix-xad" secondAttribute="bottom" constant="8" id="KPy-l1-QQQ"/>
+                            <constraint firstItem="IwD-80-cUt" firstAttribute="trailing" secondItem="N4A-Ix-xad" secondAttribute="trailing" constant="20" id="QBd-vP-jcj"/>
                             <constraint firstItem="dsA-g5-ksu" firstAttribute="leading" secondItem="IwD-80-cUt" secondAttribute="leading" constant="100" id="RWk-Iu-cUd"/>
+                            <constraint firstItem="N4A-Ix-xad" firstAttribute="leading" secondItem="IwD-80-cUt" secondAttribute="leading" constant="20" id="Rbq-dI-ibv"/>
                             <constraint firstItem="AAg-1e-neP" firstAttribute="leading" secondItem="IwD-80-cUt" secondAttribute="leading" id="Ysn-Xz-7a4"/>
                             <constraint firstItem="AAg-1e-neP" firstAttribute="trailing" secondItem="IwD-80-cUt" secondAttribute="trailing" id="lRG-1J-cw8"/>
+                            <constraint firstItem="Qwb-OB-28w" firstAttribute="top" secondItem="dsA-g5-ksu" secondAttribute="bottom" constant="155" id="yxO-4v-UtF"/>
                             <constraint firstItem="dsA-g5-ksu" firstAttribute="centerX" secondItem="nae-RQ-XOl" secondAttribute="centerX" id="zgY-5C-A5V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IwD-80-cUt"/>
@@ -75,6 +98,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="costLbl" destination="Qwb-OB-28w" id="Kjr-LZ-GBH"/>
                         <outlet property="dateLbl" destination="RLZ-qg-6Eu" id="ayQ-Ze-8bc"/>
                         <outlet property="dateSC" destination="dsA-g5-ksu" id="R2H-EI-TA9"/>
                         <outlet property="tableView" destination="AAg-1e-neP" id="U2j-gf-s2f"/>
