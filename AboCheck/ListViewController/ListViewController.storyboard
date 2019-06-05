@@ -56,20 +56,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVq-90-Hzv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                            </pickerView>
+                            <searchBar contentMode="redraw" misplaced="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="YWz-XC-Ydp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iVq-90-Hzv" firstAttribute="trailing" secondItem="FV3-H5-dCW" secondAttribute="trailing" id="05R-sq-BR1"/>
-                            <constraint firstItem="FV3-H5-dCW" firstAttribute="bottom" secondItem="iVq-90-Hzv" secondAttribute="bottom" constant="669" id="0jK-ls-ehV"/>
                             <constraint firstItem="htw-37-b77" firstAttribute="leading" secondItem="FV3-H5-dCW" secondAttribute="leading" id="BS0-XE-JFz"/>
+                            <constraint firstItem="YWz-XC-Ydp" firstAttribute="trailing" secondItem="FV3-H5-dCW" secondAttribute="trailing" id="Brm-8W-2fZ"/>
                             <constraint firstItem="htw-37-b77" firstAttribute="top" secondItem="FV3-H5-dCW" secondAttribute="top" constant="64" id="CMx-gJ-yF6"/>
-                            <constraint firstItem="iVq-90-Hzv" firstAttribute="top" secondItem="zgy-1O-hVX" secondAttribute="top" constant="88" id="TT1-pX-0sb"/>
+                            <constraint firstItem="YWz-XC-Ydp" firstAttribute="leading" secondItem="FV3-H5-dCW" secondAttribute="leading" id="CvM-3p-KYm"/>
                             <constraint firstItem="FV3-H5-dCW" firstAttribute="bottom" secondItem="htw-37-b77" secondAttribute="bottom" id="dov-Iu-YHC"/>
+                            <constraint firstItem="YWz-XC-Ydp" firstAttribute="top" secondItem="FV3-H5-dCW" secondAttribute="top" id="ggl-a6-8Kg"/>
                             <constraint firstItem="FV3-H5-dCW" firstAttribute="trailing" secondItem="htw-37-b77" secondAttribute="trailing" id="rwR-ZD-Jn9"/>
-                            <constraint firstItem="iVq-90-Hzv" firstAttribute="leading" secondItem="FV3-H5-dCW" secondAttribute="leading" id="y78-SH-Fy9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FV3-H5-dCW"/>
                     </view>
@@ -82,7 +82,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ListViewController" destination="htw-37-b77" id="8ls-yG-oj7"/>
-                        <outlet property="sortAbos" destination="iVq-90-Hzv" id="kDJ-77-R57"/>
+                        <outlet property="aboSearchBar" destination="YWz-XC-Ydp" id="d2c-p1-Adl"/>
+                        <outlet property="aboTableView" destination="htw-37-b77" id="EG7-j5-NRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzP-L2-gbj" userLabel="First Responder" sceneMemberID="firstResponder"/>

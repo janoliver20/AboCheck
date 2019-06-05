@@ -9,28 +9,60 @@
 import UIKit
 
 
-class ListViewController: UIViewController {
-    @IBOutlet weak var ListViewController: UITableView!
-    @IBOutlet weak var sortAbos: UIPickerView!
+class ListViewController: UIViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var listViewController: UITableView!
+    @IBOutlet weak var aboSearchBar: UISearchBar!
+    @IBOutlet weak var aboTableView: UITableView!
+    
+    
     
     let allAbos = AboClass.allAbos
-    var pickerData: [String] = [String]()
-
+    var aboArray = AboClass.allAbos.getArrays()
+    var currentAbos = [Abo]() // Filtered Abos for search bar
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4"]
-        
-        
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        allAbos.loadAbo()
-        ListViewController.delegate = self
-        ListViewController.dataSource = self
+        aboTableView.dataSource = self
+        aboSearchBar.delegate = self
         
     }
     
-   
-
+    override func viewWillAppear(_ animated: Bool) {
+        allAbos.loadAbo()
+        listViewController.delegate = self
+        listViewController.dataSource = self
+        currentAbos = aboArray
+    }
+    
+    
+    // Filter List with search bar
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        currentAbos = searchText.isEmpty ? aboArray : aboArray.filter { (item: Abo) -> Bool in
+            
+            // If Abo matches the searchText, return true to include it
+            return item.title?.range(of: searchText, range: nil, locale: nil) != nil
+        }
+        
+        aboTableView.reloadData()
+        
+    }
+    
+    
+    // Cancel search
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.aboSearchBar.showsCancelButton = true
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+    
+    
 }
 
 extension ListViewController:  UITableViewDelegate, UITableViewDataSource {
@@ -41,14 +73,14 @@ extension ListViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 0
+        return currentAbos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "aboCell", for: indexPath) as! ListTableViewCell
-        cell.nameLabel?.text = "Netflix"
-        cell.costsLabel.text = String(format: "%.2f", "9.99€")
+        cell.nameLabel?.text = currentAbos[indexPath.row].title
+        cell.costsLabel.text = currentAbos[indexPath.row].costsMonthly.description
         return cell
     }
     
@@ -56,7 +88,32 @@ extension ListViewController:  UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     
-   
+    // Swiping actions
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = deleteAction(at: indexPath)
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
+    
+    func deleteAction(at indexPath: IndexPath) -> UIContextualAction {
+        
+    //    let abo = aboArray[indexPath.row]
+        let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
+            self.aboArray.remove(at: indexPath.row)
+            self.aboTableView.deleteRows(at: [indexPath], with: .automatic)
+            completion(true)
+        }
+        
+       // action.image = trash
+        action.backgroundColor = .red
+        
+        return action
+        
+    }
+    
+    
     
     
 }
