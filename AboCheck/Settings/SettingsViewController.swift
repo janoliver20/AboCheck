@@ -8,16 +8,29 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UITableViewController {
     
+    @IBOutlet weak var settingsTableViewController: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     
-    
-
-    
-
 }
+
+//extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//
+//
+//
+//
+//}
