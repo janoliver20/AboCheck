@@ -81,9 +81,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ListViewController" destination="htw-37-b77" id="8ls-yG-oj7"/>
                         <outlet property="aboSearchBar" destination="YWz-XC-Ydp" id="d2c-p1-Adl"/>
-                        <outlet property="aboTableView" destination="htw-37-b77" id="EG7-j5-NRU"/>
+                        <outlet property="aboTableView" destination="htw-37-b77" id="lfM-me-RFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzP-L2-gbj" userLabel="First Responder" sceneMemberID="firstResponder"/>

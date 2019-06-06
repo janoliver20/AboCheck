@@ -10,25 +10,29 @@ import UIKit
 
 class ListViewController: UIViewController, UISearchBarDelegate {
     
-    @IBOutlet var listViewController: UITableView!
+//    @IBOutlet var listViewController: UITableView!
     @IBOutlet var aboSearchBar: UISearchBar!
     @IBOutlet var aboTableView: UITableView!
 
     let allAbos = AboClass.allAbos
     var aboArray = AboClass.allAbos.getArrays()
-    var currentAbos = [Abo]() // Filtered Abos for search bar
+    var currentAbos: [Abo] = [Abo]() // Filtered Abos for search bar
 
     override func viewDidLoad() {
         super.viewDidLoad()
         aboTableView.dataSource = self
+        aboTableView.delegate = self
         aboSearchBar.delegate = self
-        listViewController.tableFooterView = UIView()
+        aboTableView.tableFooterView = UIView()
+        
+//        listViewController.tableFooterView = UIView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         allAbos.loadAbo()
-        listViewController.delegate = self
-        listViewController.dataSource = self
+//        listViewController.delegate = self
+//        listViewController.dataSource = self
+        
         currentAbos = aboArray
     }
 
@@ -61,13 +65,14 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentAbos.count
+        return allAbos.count()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "aboCell", for: indexPath) as! ListTableViewCell
-        cell.nameLabel?.text = currentAbos[indexPath.row].title
-        cell.costsLabel.text = currentAbos[indexPath.row].costsMonthly.description
+        let aboObject = allAbos.get(at: indexPath.row)
+        cell.nameLabel?.text = aboObject?.title
+        cell.costsLabel.text = aboObject?.costsMonthly.description
         return cell
     }
 
