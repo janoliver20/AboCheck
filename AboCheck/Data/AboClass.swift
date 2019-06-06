@@ -45,7 +45,7 @@ class AboClass {
         abos.sort(by: sortClosure)
     }
 
-    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int, costsMonthly: Double = 0.0, catagory: String = "") {
+    func saveAbo(title: String, note: String = "", website: URL? = nil, creationDate: Date = Date(), endDate: Date? = nil, duration: Int = 30, costsMonthly: Double = 0.0, catagory: String = "") {
 //
         let abo = Abo(context: context)
         //  set Values to the keys.

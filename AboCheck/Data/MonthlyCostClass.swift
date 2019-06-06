@@ -12,14 +12,14 @@ import UIKit
 class MonthlyCostClass {
     static let allMonthlyCosts = MonthlyCostClass()
     private var monthlyCosts: [MonthlyCost] = [MonthlyCost]()
-    let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    let context: NSManagedObjectContext
-
+    private let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context: NSManagedObjectContext
+    
     private init() {
         context = appDelegate.persistentContainer.viewContext
         loadMonthlyCosts()
     }
-
+    
     func getCosts(dateToGet: Date, isItMonth: Bool = true) -> (MonthlyCost? ,Double) {
         var allCosts: Double = 0.0
         var entry: MonthlyCost?
@@ -43,10 +43,10 @@ class MonthlyCostClass {
                 }
             }
         }
-
+        
         return (entry, allCosts)
     }
-
+    
     func yearExistsInDB(date: Date) -> Bool {
         if monthlyCosts.contains(where: { (allCosts) -> Bool in
             if let costDate = allCosts.date,
@@ -59,7 +59,7 @@ class MonthlyCostClass {
         }
         return false
     }
-
+    
     func monthExistsInDB(date: Date) -> Bool {
         if monthlyCosts.contains(where: { (allCosts) -> Bool in
             if let costDate = allCosts.date,
@@ -73,7 +73,7 @@ class MonthlyCostClass {
         }
         return false
     }
-
+    
     func saveMonthlyCosts() {
         do {
             try context.save()
@@ -81,7 +81,7 @@ class MonthlyCostClass {
             print(error.localizedDescription)
         }
     }
-
+    
     func loadMonthlyCosts() {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "MonthlyCost")
         do {
@@ -90,7 +90,7 @@ class MonthlyCostClass {
             print(error.localizedDescription)
         }
     }
-
+    
     func deleteObject(object: Abo) {
         do {
             context.delete(object)
