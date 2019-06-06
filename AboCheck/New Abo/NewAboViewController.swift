@@ -13,18 +13,29 @@ class NewAboViewController: UIViewController {
     var Abo: Abo?
 
     @IBOutlet weak var aboname: UITextField!
-    @IBOutlet weak var monthYearSwitch: UISegmentedControl!
     
+    @IBOutlet weak var monthYearSwitch: UISegmentedControl!
     @IBOutlet weak var costs: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        if monthYearSwitch.selectedSegmentIndex == 0 {
+            costs.placeholder = "Costs per Month"
+        }
       
     }
     
 
+    @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        
+        switch monthYearSwitch.selectedSegmentIndex {
+        case 0:
+            costs.placeholder = "Costs per Month"
+        default:
+            costs.placeholder = "Costs per Year"
+        }
+    }
     @IBAction func addAbo(_ sender: UIBarButtonItem) {
         let title = aboname.text ?? ""
        
