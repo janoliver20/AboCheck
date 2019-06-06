@@ -33,6 +33,7 @@ extension UIView {
         }
         if let bottom = bottom {
             self.bottomAnchor.constraint(equalTo: bottom, constant: -paddingRight-bottomInset).isActive = true
+            
         }
         
         if height != 0 {

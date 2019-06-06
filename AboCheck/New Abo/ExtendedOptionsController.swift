@@ -15,35 +15,62 @@ class ExtendedOptionsController: UITableViewController{
         super.viewWillAppear(animated)
     }
     
-    private var datepicker: UIDatePicker?
+    @IBOutlet weak var endDate: UITextField!
     
+    
+    let datePicker: UIDatePicker = {
+        let picker = UIDatePicker()
+        picker.datePickerMode = .date
+        picker.addTarget(self, action: #selector(ExtendedOptionsController.dateChanged(datePicker:)), for: .valueChanged)
+       let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExtendedOptionsController.viewTapped))
+        picker.addGestureRecognizer(tapGesture)
+        
+        return picker
+    }()
+   
+    
+    @IBAction func memberSinceField(_ sender: UITextField) {
+        
+        sender.inputView = datePicker
+    }
+    @IBAction func endDate(_ sender: UITextField) {
+        sender.inputView = datePicker
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        datepicker = UIDatePicker()
-        datepicker?.datePickerMode = .date
-        datepicker?.addTarget(self, action: #selector(ExtendedOptionsController.dateChanged(datePicker:)), for: .valueChanged)
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ExtendedOptionsController.viewTapped(gestureRecognizer:)))
-        view.addGestureRecognizer(tapGesture)
-        memberSince.inputView = datepicker
-        
+
+//        memberSince.inputView = datePicker
+//        inputView?.backgroundColor  = UIColor.white
+//        endDate.inputView = datePicker
+//        
+//        inputView?.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 150, paddingRight: 0, width: 0, height: 0, enableInsets: false)
        
+     
     }
     
-    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer ){
+    @objc func viewTapped(){
         view.endEditing(true)
     }
+    
     
     @objc func dateChanged(datePicker: UIDatePicker){
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         
-        memberSince.text = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
+        if memberSince.isFirstResponder{
+            memberSince.text = dateFormatter.string(from: datePicker.date)
+            
+        }
+        else if endDate.isFirstResponder {
+            endDate.text = dateFormatter.string(from: datePicker.date)
+        }
+        
+        
+        
         
     }
-
     
     
     
