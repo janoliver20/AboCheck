@@ -37,7 +37,7 @@ class NewAboViewController: UIViewController {
         }
     }
     @IBAction func addAbo(_ sender: UIBarButtonItem) {
-        let title = aboname.text ?? ""
+        let title = aboname.text ?? "Kein Text"
        
         
         AboClass.allAbos.saveAbo(title: title)

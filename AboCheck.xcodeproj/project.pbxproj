@@ -16,16 +16,21 @@
 		1F265C6C2284399300EE943B /* AboCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F265C6B2284399300EE943B /* AboCheckUITests.swift */; };
 		1F307F8F229B280E000713FE /* aboPropertys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F307F8E229B280E000713FE /* aboPropertys.swift */; };
 		1F307F9522A12B92000713FE /* AboExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F307F9422A12B92000713FE /* AboExtension.swift */; };
+		1F73822722A924B10042B650 /* MemberSinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73822222A924B00042B650 /* MemberSinceCell.swift */; };
+		1F73822822A924B10042B650 /* NewAboCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73822322A924B00042B650 /* NewAboCategoryCell.swift */; };
+		1F73822922A924B10042B650 /* NewAboViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73822422A924B00042B650 /* NewAboViewController.storyboard */; };
+		1F73822A22A924B10042B650 /* ExtendedOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73822522A924B10042B650 /* ExtendedOptionsController.swift */; };
+		1F73822B22A924B10042B650 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73822622A924B10042B650 /* NewAboViewController.swift */; };
 		1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E25BF228C491B0022BE13 /* AboClass.swift */; };
 		1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */; };
 		1FB7AB1C22A17E0800724784 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7AB1B22A17E0800724784 /* UIViewExtension.swift */; };
 		1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE74E40228EB417001F1D4D /* DashboardViewController.swift */; };
 		1FE74E43228EB437001F1D4D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */; };
-		852C7C66229B0A5F0059ABFE /* NewAboViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */; };
+		1FFCCB9C22A2758B00D415A4 /* MonthlyCostClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCCB9B22A2758B00D415A4 /* MonthlyCostClass.swift */; };
+		1FFCCB9E22A27D4800D415A4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCCB9D22A27D4800D415A4 /* DateExtension.swift */; };
 		852C7C68229B0E9A0059ABFE /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */; };
 		85652163228C40270047436C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652162228C40270047436C /* ListViewController.swift */; };
 		85652165228C404C0047436C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85652164228C404C0047436C /* SettingsViewController.swift */; };
-		D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33A0374228C410800F918C9 /* NewAboViewController.swift */; };
 		D3B25F0D229B172C002B4A8A /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B25F0C229B172C002B4A8A /* SettingsViewController.storyboard */; };
 		D3B25F0F229B2B55002B4A8A /* NewAboCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */; };
 		D3B25F11229B317E002B4A8A /* ExtendedOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */; };
@@ -65,16 +70,21 @@
 		1F265C6D2284399300EE943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F307F8E229B280E000713FE /* aboPropertys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboPropertys.swift; sourceTree = "<group>"; };
 		1F307F9422A12B92000713FE /* AboExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboExtension.swift; sourceTree = "<group>"; };
+		1F73822222A924B00042B650 /* MemberSinceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSinceCell.swift; sourceTree = "<group>"; };
+		1F73822322A924B00042B650 /* NewAboCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAboCategoryCell.swift; sourceTree = "<group>"; };
+		1F73822422A924B00042B650 /* NewAboViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewAboViewController.storyboard; sourceTree = "<group>"; };
+		1F73822522A924B10042B650 /* ExtendedOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedOptionsController.swift; sourceTree = "<group>"; };
+		1F73822622A924B10042B650 /* NewAboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
 		1F7E25BF228C491B0022BE13 /* AboClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboClass.swift; sourceTree = "<group>"; };
 		1FAAD66D229B043600DE232E /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		1FB7AB1B22A17E0800724784 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1FE74E40228EB417001F1D4D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1FE74E42228EB437001F1D4D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
-		852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewAboViewController.storyboard; sourceTree = "<group>"; };
+		1FFCCB9B22A2758B00D415A4 /* MonthlyCostClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCostClass.swift; sourceTree = "<group>"; };
+		1FFCCB9D22A27D4800D415A4 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		852C7C67229B0E9A0059ABFE /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
 		85652162228C40270047436C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		85652164228C404C0047436C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		D33A0374228C410800F918C9 /* NewAboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboViewController.swift; sourceTree = "<group>"; };
 		D3B25F0C229B172C002B4A8A /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAboCategoryCell.swift; sourceTree = "<group>"; };
 		D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedOptionsController.swift; sourceTree = "<group>"; };
@@ -165,11 +175,11 @@
 		1FE74E35228EA41F001F1D4D /* New Abo */ = {
 			isa = PBXGroup;
 			children = (
-				D33A0374228C410800F918C9 /* NewAboViewController.swift */,
-				852C7C65229B0A5F0059ABFE /* NewAboViewController.storyboard */,
-				D3B25F10229B317E002B4A8A /* ExtendedOptionsController.swift */,
-				D3B25F0E229B2B55002B4A8A /* NewAboCategoryCell.swift */,
-				D3B25F12229B4468002B4A8A /* MemberSinceCell.swift */,
+				1F73822522A924B10042B650 /* ExtendedOptionsController.swift */,
+				1F73822222A924B00042B650 /* MemberSinceCell.swift */,
+				1F73822322A924B00042B650 /* NewAboCategoryCell.swift */,
+				1F73822422A924B00042B650 /* NewAboViewController.storyboard */,
+				1F73822622A924B10042B650 /* NewAboViewController.swift */,
 			);
 			path = "New Abo";
 			sourceTree = "<group>";
@@ -324,7 +334,7 @@
 				1F265C562284399300EE943B /* LaunchScreen.storyboard in Resources */,
 				1F265C532284399300EE943B /* Assets.xcassets in Resources */,
 				1F265C4E2284399100EE943B /* Main.storyboard in Resources */,
-				852C7C66229B0A5F0059ABFE /* NewAboViewController.storyboard in Resources */,
+				1F73822922A924B10042B650 /* NewAboViewController.storyboard in Resources */,
 				852C7C68229B0E9A0059ABFE /* ListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,16 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B25F13229B4468002B4A8A /* MemberSinceCell.swift in Sources */,
+				1F73822722A924B10042B650 /* MemberSinceCell.swift in Sources */,
 				1F7E25C0228C491B0022BE13 /* AboClass.swift in Sources */,
 				D3B25F0F229B2B55002B4A8A /* NewAboCategoryCell.swift in Sources */,
 				1FE74E41228EB417001F1D4D /* DashboardViewController.swift in Sources */,
 				1FB7AB1C22A17E0800724784 /* UIViewExtension.swift in Sources */,
 				1FAAD66E229B043600DE232E /* DashboardTableViewCell.swift in Sources */,
-				D33A0375228C410800F918C9 /* NewAboViewController.swift in Sources */,
+				1FFCCB9E22A27D4800D415A4 /* DateExtension.swift in Sources */,
 				1F307F9522A12B92000713FE /* AboExtension.swift in Sources */,
 				1F307F8F229B280E000713FE /* aboPropertys.swift in Sources */,
+				1F73822B22A924B10042B650 /* NewAboViewController.swift in Sources */,
 				1F265C492284399100EE943B /* AppDelegate.swift in Sources */,
+				852C7C6A229B25640059ABFE /* ListTableViewCell.swift in Sources */,
+				1F73822822A924B10042B650 /* NewAboCategoryCell.swift in Sources */,
+				1F73822A22A924B10042B650 /* ExtendedOptionsController.swift in Sources */,
 				85652163228C40270047436C /* ListViewController.swift in Sources */,
 				85652165228C404C0047436C /* SettingsViewController.swift in Sources */,
 				1F265C512284399100EE943B /* AboCheck.xcdatamodeld in Sources */,

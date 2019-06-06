@@ -99,6 +99,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="costLbl" destination="Qwb-OB-28w" id="Kjr-LZ-GBH"/>
+                        <outlet property="dashBoardContainer" destination="GhL-x9-a9Y" id="YDp-qJ-sRV"/>
                         <outlet property="dateLbl" destination="RLZ-qg-6Eu" id="ayQ-Ze-8bc"/>
                         <outlet property="dateSC" destination="dsA-g5-ksu" id="R2H-EI-TA9"/>
                         <outlet property="tableView" destination="AAg-1e-neP" id="U2j-gf-s2f"/>
